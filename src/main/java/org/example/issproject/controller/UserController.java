@@ -2,17 +2,17 @@ package org.example.issproject.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.example.issproject.domain.ActivityStatus;
+import org.example.issproject.domain.Profile;
 import org.example.issproject.domain.User;
 import org.example.issproject.request.LoginRequest;
 import org.example.issproject.request.RegisterRequest;
+import org.example.issproject.service.ProfileService;
 import org.example.issproject.service.UserService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     private final UserService userService;
-
+    private final ProfileService profileService;
 
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody RegisterRequest request) {
@@ -38,7 +38,12 @@ public class UserController {
         newUser.setEmail(request.getEmail());
         newUser.setPasswordHash(request.getPassword());
 
+        Profile profile = new Profile();
+        profile.setActivity(ActivityStatus.ONLINE);
+        profile.setUser(newUser);
+        newUser.setProfile(profile);
         User savedUser = userService.register(newUser);
+        profileService.save(profile);
         log.info("Register completed for username={} id={}", request.getUsername(), savedUser.getId());
 
         return ResponseEntity.ok("Successful register");

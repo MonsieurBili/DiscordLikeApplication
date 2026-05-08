@@ -4,10 +4,7 @@ import lombok.Data;
 import org.example.issproject.domain.ActivityStatus;
 
 @Data
-public class ProfileRequest {
-    private  String profilePicUrl;
+public class UpdateProfileRequest {
     private String description;
-    private ActivityStatus activityStatus;
-    private String username;
-
+    private ActivityStatus activity;
 }
