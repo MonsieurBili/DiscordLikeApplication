@@ -1,5 +1,6 @@
 package org.example.issproject.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -45,6 +46,7 @@ public class User implements UserDetails {
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Profile profile;
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
