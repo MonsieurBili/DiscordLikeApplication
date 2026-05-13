@@ -33,6 +33,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.42'
     implementation("com.cloudinary:cloudinary-http44:1.39.0")
     implementation 'commons-io:commons-io:2.15.1'
+    implementation("org.springframework.boot:spring-boot-starter-websocket:4.0.6")
 }
 
 tasks.named('test') {

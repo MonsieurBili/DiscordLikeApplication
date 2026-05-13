@@ -9,6 +9,7 @@ import org.example.issproject.request.LoginRequest;
 import org.example.issproject.request.RegisterRequest;
 import org.example.issproject.service.ProfileService;
 import org.example.issproject.service.UserService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -42,16 +43,32 @@ public class UserController {
         profile.setActivity(ActivityStatus.ONLINE);
         profile.setUser(newUser);
         newUser.setProfile(profile);
-        User savedUser = userService.register(newUser);
-        profileService.save(profile);
-        log.info("Register completed for username={} id={}", request.getUsername(), savedUser.getId());
+        User savedUser= null;
+        try {
+            savedUser = userService.register(newUser);
+            profileService.save(profile);
+            log.info("Register completed for username={} id={}", request.getUsername(), savedUser.getId());
+            return ResponseEntity.ok("Successful register");
+        } catch (Exception e) {
+            log.info("Register failed because e=",e.getMessage());
+            return ResponseEntity.status(HttpStatus.CONFLICT).body("Register failed");
+        }
 
-        return ResponseEntity.ok("Successful register");
     }
 
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody LoginRequest request) {
         String token = userService.login(request.getUsername(), request.getPassword());
+
+        User user = userService.findByUsername(request.getUsername());
+        if (user != null) {
+            Profile profile = profileService.getProfile(user);
+            profile.setActivity(ActivityStatus.ONLINE);
+            profileService.save(profile);
+            log.info("User {} set to ONLINE on login", user.getUsername());
+        } else {
+            log.warn("Login succeeded but user not found for username={}", request.getUsername());
+        }
 
         return ResponseEntity.ok(token);
     }

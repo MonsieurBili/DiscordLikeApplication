@@ -2,6 +2,7 @@ package org.example.issproject.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.example.issproject.domain.Friendship;
 import org.example.issproject.domain.User;
 import org.example.issproject.repository.UserRepository;
 import org.example.issproject.security.JWTService;
@@ -10,6 +11,9 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -52,4 +56,38 @@ public class UserService {
             throw new RuntimeException("Failed to authenticate user");
         }
     }
+
+
+    public void addFriendshipReceiver(User user, Friendship friendship) {
+        log.info("Adding Friendship receiver for user={}", user.getUsername());
+        user.addFriendshipReceiver(friendship);
+        userRepository.save(user);
+    }
+
+    public User findByUsername(String username) {
+        User user = userRepository.findByUsername(username);
+        if (user != null) {
+            log.info("User {} found successfully", user.getUsername());
+            return user;
+        }
+        else
+        {
+            log.info("User {} not found", username);
+            return null;
+        }
+    }
+
+    public User findById(UUID id) {
+        User user = userRepository.findById(id).orElse(null);
+        if (user != null) {
+            log.info("User {} found successfully", user.getUsername());
+            return user;
+        }
+        else
+        {
+            log.info("User {} not found", id);
+            return null;
+        }
+    }
+
 }

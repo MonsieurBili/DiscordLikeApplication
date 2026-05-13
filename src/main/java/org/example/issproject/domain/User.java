@@ -11,6 +11,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
@@ -38,6 +39,14 @@ public class User implements UserDetails {
 
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
+
+    @OneToMany(mappedBy = "user1", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private List<Friendship> sentFriendships = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user2", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private List<Friendship> receivedFriendships = new ArrayList<>();
 
     @PrePersist
     protected void onCreate() {
@@ -83,4 +92,14 @@ public class User implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
+
+    public void addFriendshipSender(Friendship friendship) {
+        sentFriendships.add(friendship);
+    }
+    public void addFriendshipReceiver(Friendship friendship) {
+        receivedFriendships.add(friendship);
+    }
+
+
 }
