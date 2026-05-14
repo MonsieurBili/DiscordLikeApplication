@@ -2609,3 +2609,391 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 13:27:22.050 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 13:27:22.050 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 13:27:22.054 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+13:37:47.768 [main] INFO  o.e.issproject.IssProjectApplication - Starting IssProjectApplication using Java 21.0.9 with PID 10316 (D:\Faculta\MPP\ISS-Project\build\classes\java\main started by Raul in D:\Faculta\MPP\ISS-Project)
+13:37:47.771 [main] INFO  o.e.issproject.IssProjectApplication - No active profile set, falling back to 1 default profile: "default"
+13:37:48.290 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:37:48.338 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 5 JPA repository interfaces.
+13:37:48.698 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+13:37:48.705 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+13:37:48.705 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:37:48.705 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+13:37:48.747 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 941 ms
+13:37:48.844 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+13:37:48.879 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+13:37:49.212 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13:37:49.232 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:37:49.344 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6df87ffd
+13:37:49.344 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:37:49.399 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/discord_clone]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.0
+	Default catalog/schema: discord_clone/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+13:37:50.351 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:37:50.448 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:37:50.490 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+13:37:51.691 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+13:37:51.691 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+13:37:51.948 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:37:52.530 [main] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+13:37:52.530 [main] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@59d8de36]]
+13:37:52.530 [main] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+13:37:52.530 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+13:37:52.543 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+13:37:52.546 [main] INFO  o.e.issproject.IssProjectApplication - Started IssProjectApplication in 5.139 seconds (process running for 5.578)
+13:37:54.005 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:37:54.005 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:37:54.009 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+13:37:54.123 [http-nio-8081-exec-3] INFO  o.e.i.controller.UserController - Register request username=tata email=tata@gmail.com
+13:37:54.128 [http-nio-8081-exec-3] INFO  o.e.issproject.service.UserService - Register User method called for username=tata
+13:37:54.413 [http-nio-8081-exec-3] INFO  o.e.issproject.service.UserService - User saved successfully: tata
+13:37:54.413 [http-nio-8081-exec-3] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@23d9eaef
+13:37:54.413 [http-nio-8081-exec-3] INFO  o.e.i.controller.UserController - Register completed for username=tata id=5a6843ad-82b3-4740-addf-a0addc7f2452
+13:37:54.503 [http-nio-8081-exec-4] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+13:37:54.638 [http-nio-8081-exec-4] ERROR o.e.i.w.WebSocketSecurityConfig - Eroare la validarea token-ului în WebSocket: JWT expired 2999638 milliseconds ago at 2026-05-14T09:47:55.000Z. Current time: 2026-05-14T10:37:54.638Z. Allowed clock skew: 0 milliseconds.
+13:38:00.412 [http-nio-8081-exec-5] INFO  o.e.issproject.service.UserService - Login method called for username=tata
+13:38:00.501 [http-nio-8081-exec-5] INFO  o.e.issproject.service.UserService - Authentication successful for username=tata
+13:38:00.544 [http-nio-8081-exec-5] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:38:00.544 [http-nio-8081-exec-5] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:38:00.544 [http-nio-8081-exec-5] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@31823d9d
+13:38:00.544 [http-nio-8081-exec-5] INFO  o.e.i.controller.UserController - User tata set to ONLINE on login
+13:38:01.620 [http-nio-8081-exec-6] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:38:01.656 [http-nio-8081-exec-7] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:38:08.702 [http-nio-8081-exec-9] INFO  o.e.i.service.ProfileService - Starting image upload
+13:38:11.278 [http-nio-8081-exec-9] INFO  o.e.i.service.ProfileService - Succesfull upload of profile pic for user: 5a6843ad-82b3-4740-addf-a0addc7f2452
+13:38:11.299 [http-nio-8081-exec-9] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:38:16.118 [http-nio-8081-exec-1] INFO  o.e.i.service.ProfileService - Profile updating profile
+13:38:16.118 [http-nio-8081-exec-1] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:38:16.118 [http-nio-8081-exec-1] INFO  o.e.i.service.ProfileService - Description updated
+13:38:16.118 [http-nio-8081-exec-1] INFO  o.e.i.service.ProfileService - Succesfull update of profile
+13:38:20.965 [http-nio-8081-exec-2] INFO  o.e.i.c.ConversationController - Fetching conversations for user: tata
+13:38:20.978 [http-nio-8081-exec-4] INFO  o.e.i.c.ConversationController - Fetching conversations for user: tata
+13:38:21.005 [http-nio-8081-exec-6] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+13:38:21.007 [http-nio-8081-exec-6] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'tata' s-a conectat cu succes la WebSocket!
+13:38:21.007 [clientOutboundChannel-2] INFO  o.e.i.w.WebSocketEventListener - Userul tata a intrat ONLINE
+13:38:21.013 [clientOutboundChannel-2] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:38:21.013 [clientOutboundChannel-2] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@7085312f
+13:38:21.021 [clientOutboundChannel-2] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@7085312f
+13:38:23.324 [http-nio-8081-exec-10] INFO  o.e.i.w.WebSocketEventListener - Userul tata a ieșit OFFLINE
+13:38:23.327 [http-nio-8081-exec-10] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:38:23.327 [http-nio-8081-exec-10] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@3901d31c
+13:38:23.327 [http-nio-8081-exec-3] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:38:23.327 [http-nio-8081-exec-5] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:38:23.327 [http-nio-8081-exec-5] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user tata
+13:38:23.332 [http-nio-8081-exec-6] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:38:23.332 [http-nio-8081-exec-6] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user tata
+13:38:23.332 [http-nio-8081-exec-5] INFO  o.e.i.c.FriendshipController - Found 0 friendships for user tata
+13:38:23.332 [http-nio-8081-exec-6] INFO  o.e.i.c.FriendshipController - Found 0 friendships for user tata
+13:38:23.332 [http-nio-8081-exec-7] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:38:23.342 [http-nio-8081-exec-9] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:38:23.342 [http-nio-8081-exec-9] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user tata
+13:38:23.343 [http-nio-8081-exec-8] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:38:23.343 [http-nio-8081-exec-8] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user tata
+13:38:23.344 [http-nio-8081-exec-9] INFO  o.e.i.c.FriendshipController - Found 0 friendships for user tata
+13:38:23.345 [http-nio-8081-exec-8] INFO  o.e.i.c.FriendshipController - Found 0 friendships for user tata
+13:38:26.179 [http-nio-8081-exec-1] INFO  o.e.issproject.service.UserService - User billy found successfully
+13:38:26.179 [http-nio-8081-exec-1] INFO  o.e.i.service.FriendshipService - Sending friendship request
+13:38:52.530 [MessageBroker-12] INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 2 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(2)-CONNECTED(2)-DISCONNECT(1)], stompBrokerRelay[null], inboundChannel[pool size = 18, active threads = 0, queued tasks = 0, completed tasks = 18], outboundChannel[pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 4], sockJsScheduler[pool size = 20, active threads = 1, queued tasks = 2, completed tasks = 14]
+13:39:06.887 [http-nio-8081-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired 82709880 milliseconds ago at 2026-05-13T11:40:37.000Z. Current time: 2026-05-14T10:39:06.880Z. Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:688)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:364)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94)
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36)
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:827)
+	at org.example.issproject.security.JWTService.extractAllClaims(JWTService.java:68)
+	at org.example.issproject.security.JWTService.extractClaim(JWTService.java:60)
+	at org.example.issproject.security.JWTService.extractUsername(JWTService.java:43)
+	at org.example.issproject.security.JwtFilter.doFilterInternal(JwtFilter.java:38)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13:39:06.894 [http-nio-8081-exec-7] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+13:39:06.894 [http-nio-8081-exec-7] ERROR o.e.i.w.WebSocketSecurityConfig - Eroare la validarea token-ului în WebSocket: JWT expired 82709894 milliseconds ago at 2026-05-13T11:40:37.000Z. Current time: 2026-05-14T10:39:06.894Z. Allowed clock skew: 0 milliseconds.
+13:39:06.901 [http-nio-8081-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired 82709901 milliseconds ago at 2026-05-13T11:40:37.000Z. Current time: 2026-05-14T10:39:06.901Z. Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:688)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:364)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94)
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36)
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:827)
+	at org.example.issproject.security.JWTService.extractAllClaims(JWTService.java:68)
+	at org.example.issproject.security.JWTService.extractClaim(JWTService.java:60)
+	at org.example.issproject.security.JWTService.extractUsername(JWTService.java:43)
+	at org.example.issproject.security.JwtFilter.doFilterInternal(JwtFilter.java:38)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13:39:10.117 [http-nio-8081-exec-2] INFO  o.e.issproject.service.UserService - Login method called for username=billy
+13:39:10.216 [http-nio-8081-exec-2] INFO  o.e.issproject.service.UserService - Authentication successful for username=billy
+13:39:10.226 [http-nio-8081-exec-2] INFO  o.e.issproject.service.UserService - User billy found successfully
+13:39:10.230 [http-nio-8081-exec-2] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:10.230 [http-nio-8081-exec-2] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@57bac72f
+13:39:10.233 [http-nio-8081-exec-2] INFO  o.e.i.controller.UserController - User billy set to ONLINE on login
+13:39:11.276 [http-nio-8081-exec-1] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:11.290 [http-nio-8081-exec-3] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:13.702 [http-nio-8081-exec-7] INFO  o.e.i.c.ConversationController - Fetching conversations for user: billy
+13:39:13.702 [http-nio-8081-exec-9] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+13:39:13.707 [http-nio-8081-exec-9] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'billy' s-a conectat cu succes la WebSocket!
+13:39:13.711 [clientOutboundChannel-6] INFO  o.e.i.w.WebSocketEventListener - Userul billy a intrat ONLINE
+13:39:13.713 [clientOutboundChannel-6] INFO  o.e.issproject.service.UserService - User billy found successfully
+13:39:13.713 [clientOutboundChannel-6] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@639547df
+13:39:13.727 [clientOutboundChannel-6] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@639547df
+13:39:13.741 [http-nio-8081-exec-2] INFO  o.e.i.c.ConversationController - Fetching conversations for user: billy
+13:39:14.684 [http-nio-8081-exec-3] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation 05dd574d-9cec-4999-bd33-c1e5566884a9
+13:39:15.105 [http-nio-8081-exec-4] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation f9bd6f20-da12-41a7-8831-8316b7ae24aa
+13:39:15.470 [http-nio-8081-exec-10] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation 05dd574d-9cec-4999-bd33-c1e5566884a9
+13:39:15.775 [http-nio-8081-exec-6] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation f9bd6f20-da12-41a7-8831-8316b7ae24aa
+13:39:16.013 [http-nio-8081-exec-9] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation 05dd574d-9cec-4999-bd33-c1e5566884a9
+13:39:16.192 [http-nio-8081-exec-8] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation f9bd6f20-da12-41a7-8831-8316b7ae24aa
+13:39:16.616 [http-nio-8081-exec-7] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation 05dd574d-9cec-4999-bd33-c1e5566884a9
+13:39:16.880 [http-nio-8081-exec-2] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation 05dd574d-9cec-4999-bd33-c1e5566884a9
+13:39:17.298 [http-nio-8081-exec-5] INFO  o.e.i.w.WebSocketEventListener - Userul billy a ieșit OFFLINE
+13:39:17.299 [http-nio-8081-exec-5] INFO  o.e.issproject.service.UserService - User billy found successfully
+13:39:17.300 [http-nio-8081-exec-5] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@60042238
+13:39:17.301 [http-nio-8081-exec-3] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:17.312 [http-nio-8081-exec-3] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:18.439 [http-nio-8081-exec-2] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:18.439 [http-nio-8081-exec-2] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:18.440 [http-nio-8081-exec-9] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:18.441 [http-nio-8081-exec-10] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:18.441 [http-nio-8081-exec-10] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:18.441 [http-nio-8081-exec-2] INFO  o.e.i.c.FriendshipController - Found 2 friendships for user billy
+13:39:18.451 [http-nio-8081-exec-4] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:18.451 [http-nio-8081-exec-10] INFO  o.e.i.c.FriendshipController - Found 3 friendships for user billy
+13:39:18.455 [http-nio-8081-exec-2] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:18.455 [http-nio-8081-exec-2] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:18.458 [http-nio-8081-exec-5] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:18.459 [http-nio-8081-exec-5] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:18.463 [http-nio-8081-exec-2] INFO  o.e.i.c.FriendshipController - Found 2 friendships for user billy
+13:39:18.463 [http-nio-8081-exec-5] INFO  o.e.i.c.FriendshipController - Found 3 friendships for user billy
+13:39:23.226 [http-nio-8081-exec-6] INFO  o.e.i.c.FriendshipController - Accept Friendship request faf4f606-4e5f-4908-8c45-ba5b0b62becc
+13:39:23.226 [http-nio-8081-exec-6] INFO  o.e.i.service.FriendshipService - Accepting friendship request
+13:39:23.235 [http-nio-8081-exec-6] INFO  o.e.i.service.FriendshipService - Friendship accepted successfully
+13:39:23.235 [http-nio-8081-exec-6] INFO  o.e.i.c.FriendshipController - Accepted succesfully
+13:39:23.246 [http-nio-8081-exec-9] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:23.246 [http-nio-8081-exec-1] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:23.246 [http-nio-8081-exec-9] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:23.246 [http-nio-8081-exec-1] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:23.252 [http-nio-8081-exec-9] INFO  o.e.i.c.FriendshipController - Found 1 friendships for user billy
+13:39:23.253 [http-nio-8081-exec-1] INFO  o.e.i.c.FriendshipController - Found 4 friendships for user billy
+13:39:25.461 [http-nio-8081-exec-5] INFO  o.e.i.c.ConversationController - Fetching conversations for user: billy
+13:39:25.461 [http-nio-8081-exec-6] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+13:39:25.470 [http-nio-8081-exec-6] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'billy' s-a conectat cu succes la WebSocket!
+13:39:25.475 [clientOutboundChannel-9] INFO  o.e.i.w.WebSocketEventListener - Userul billy a intrat ONLINE
+13:39:25.476 [clientOutboundChannel-9] INFO  o.e.issproject.service.UserService - User billy found successfully
+13:39:25.476 [clientOutboundChannel-9] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@699c7381
+13:39:25.483 [http-nio-8081-exec-9] INFO  o.e.i.c.ConversationController - Fetching conversations for user: billy
+13:39:25.500 [clientOutboundChannel-9] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@699c7381
+13:39:26.670 [http-nio-8081-exec-10] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation 471ecae8-d7fe-49f1-be07-8dd2f3c14bb8
+13:39:31.230 [clientInboundChannel-46] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:39:31.232 [clientInboundChannel-46] INFO  o.e.issproject.service.UserService - User billy found successfully
+13:39:31.252 [clientInboundChannel-46] INFO  o.e.i.controller.MessageController - Message delivered to receiver: tata
+13:39:31.252 [clientInboundChannel-46] INFO  o.e.i.controller.MessageController - Echo delivered to sender: billy
+13:39:32.367 [http-nio-8081-exec-6] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:32.367 [http-nio-8081-exec-7] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:32.367 [http-nio-8081-exec-6] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user tata
+13:39:32.367 [http-nio-8081-exec-7] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user tata
+13:39:32.369 [http-nio-8081-exec-6] INFO  o.e.i.c.FriendshipController - Found 0 friendships for user tata
+13:39:32.369 [http-nio-8081-exec-5] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:39:32.371 [http-nio-8081-exec-7] INFO  o.e.i.c.FriendshipController - Found 1 friendships for user tata
+13:39:32.376 [http-nio-8081-exec-9] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:32.376 [http-nio-8081-exec-9] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user tata
+13:39:32.377 [http-nio-8081-exec-4] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:32.377 [http-nio-8081-exec-4] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user tata
+13:39:32.377 [http-nio-8081-exec-9] INFO  o.e.i.c.FriendshipController - Found 0 friendships for user tata
+13:39:32.378 [http-nio-8081-exec-1] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:39:32.379 [http-nio-8081-exec-4] INFO  o.e.i.c.FriendshipController - Found 1 friendships for user tata
+13:39:32.401 [http-nio-8081-exec-2] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+13:39:32.405 [http-nio-8081-exec-2] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'tata' s-a conectat cu succes la WebSocket!
+13:39:32.407 [clientOutboundChannel-12] INFO  o.e.i.w.WebSocketEventListener - Userul tata a intrat ONLINE
+13:39:32.409 [clientOutboundChannel-12] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:39:32.410 [clientOutboundChannel-12] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@31e7ab35
+13:39:32.420 [clientOutboundChannel-12] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@31e7ab35
+13:39:33.729 [http-nio-8081-exec-8] INFO  o.e.i.c.ConversationController - Fetching conversations for user: tata
+13:39:33.737 [http-nio-8081-exec-5] INFO  o.e.i.c.ConversationController - Fetching conversations for user: tata
+13:39:33.737 [http-nio-8081-exec-9] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+13:39:33.737 [http-nio-8081-exec-9] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'tata' s-a conectat cu succes la WebSocket!
+13:39:33.745 [clientOutboundChannel-13] INFO  o.e.i.w.WebSocketEventListener - Userul tata a intrat ONLINE
+13:39:33.746 [clientOutboundChannel-13] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:39:33.747 [clientOutboundChannel-13] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@ed4918f
+13:39:33.756 [clientOutboundChannel-13] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@ed4918f
+13:39:34.433 [http-nio-8081-exec-4] INFO  o.e.i.c.ConversationController - User tata loading messages for conversation 471ecae8-d7fe-49f1-be07-8dd2f3c14bb8
+13:39:36.665 [clientInboundChannel-23] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:39:36.665 [clientInboundChannel-23] INFO  o.e.issproject.service.UserService - User billy found successfully
+13:39:36.680 [clientInboundChannel-23] INFO  o.e.i.controller.MessageController - Message delivered to receiver: tata
+13:39:36.680 [clientInboundChannel-23] INFO  o.e.i.controller.MessageController - Echo delivered to sender: billy
+13:39:40.567 [clientInboundChannel-27] INFO  o.e.issproject.service.UserService - User billy found successfully
+13:39:40.567 [clientInboundChannel-27] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:39:40.592 [clientInboundChannel-27] INFO  o.e.i.controller.MessageController - Message delivered to receiver: billy
+13:39:40.592 [clientInboundChannel-27] INFO  o.e.i.controller.MessageController - Echo delivered to sender: tata
+13:39:44.649 [clientInboundChannel-30] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.650 [clientInboundChannel-35] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.650 [clientInboundChannel-44] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.651 [clientInboundChannel-42] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.651 [clientInboundChannel-33] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.651 [clientInboundChannel-39] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.674 [clientInboundChannel-46] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.753 [clientInboundChannel-53] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.753 [clientInboundChannel-50] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.753 [clientInboundChannel-56] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.753 [clientInboundChannel-19] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:44.754 [clientInboundChannel-24] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:46.102 [clientInboundChannel-23] INFO  o.e.i.controller.CallController - Call signal send from tata to billy
+13:39:46.116 [clientInboundChannel-41] INFO  o.e.i.controller.CallController - Call signal send from tata to billy
+13:39:46.116 [clientInboundChannel-38] INFO  o.e.i.controller.CallController - Call signal send from tata to billy
+13:39:46.116 [clientInboundChannel-34] INFO  o.e.i.controller.CallController - Call signal send from tata to billy
+13:39:46.116 [clientInboundChannel-27] INFO  o.e.i.controller.CallController - Call signal send from tata to billy
+13:39:46.116 [clientInboundChannel-48] INFO  o.e.i.controller.CallController - Call signal send from tata to billy
+13:39:46.156 [clientInboundChannel-44] INFO  o.e.i.controller.CallController - Call signal send from tata to billy
+13:39:52.121 [clientInboundChannel-39] INFO  o.e.i.controller.CallController - Call signal send from billy to tata
+13:39:52.907 [http-nio-8081-exec-7] INFO  o.e.i.w.WebSocketEventListener - Userul billy a ieșit OFFLINE
+13:39:52.908 [http-nio-8081-exec-2] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:52.910 [http-nio-8081-exec-2] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:52.910 [http-nio-8081-exec-7] INFO  o.e.issproject.service.UserService - User billy found successfully
+13:39:52.910 [http-nio-8081-exec-8] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:52.910 [http-nio-8081-exec-7] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@1256ab31
+13:39:52.910 [http-nio-8081-exec-8] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:52.911 [http-nio-8081-exec-6] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:52.911 [http-nio-8081-exec-2] INFO  o.e.i.c.FriendshipController - Found 1 friendships for user billy
+13:39:52.913 [http-nio-8081-exec-8] INFO  o.e.i.c.FriendshipController - Found 4 friendships for user billy
+13:39:52.915 [http-nio-8081-exec-5] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:52.915 [http-nio-8081-exec-5] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:52.915 [http-nio-8081-exec-9] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:52.915 [http-nio-8081-exec-3] INFO  o.e.i.c.FriendshipController - Get Current Friendships method called in controller
+13:39:52.915 [http-nio-8081-exec-3] INFO  o.e.i.service.FriendshipService - Getting friendships accepted for user billy
+13:39:52.915 [http-nio-8081-exec-5] INFO  o.e.i.c.FriendshipController - Found 1 friendships for user billy
+13:39:52.922 [http-nio-8081-exec-3] INFO  o.e.i.c.FriendshipController - Found 4 friendships for user billy
+13:39:55.451 [http-nio-8081-exec-10] INFO  o.e.i.w.WebSocketEventListener - Userul tata a ieșit OFFLINE
+13:39:55.452 [http-nio-8081-exec-10] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:39:55.452 [http-nio-8081-exec-10] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@3534e0e4
+13:39:55.454 [http-nio-8081-exec-4] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:39:55.458 [http-nio-8081-exec-2] INFO  o.e.i.service.ProfileService - Profile found for User: tata
+13:39:59.704 [http-nio-8081-exec-6] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:39:59.706 [http-nio-8081-exec-8] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+13:40:10.170 [http-nio-8081-exec-5] INFO  o.e.i.w.WebSocketEventListener - Userul tata a ieșit OFFLINE
+13:40:10.170 [http-nio-8081-exec-5] INFO  o.e.issproject.service.UserService - User tata found successfully
+13:40:10.170 [http-nio-8081-exec-5] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@46443b8b
+13:48:09.181 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+13:48:09.183 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+13:48:09.183 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+13:48:09.183 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@59d8de36]]
+13:48:09.183 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+13:48:09.183 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13:48:09.199 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13:48:09.199 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
