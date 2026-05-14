@@ -15,7 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/turn")
-@CrossOrigin(origins = {"http://localhost:5173","https://uiiss.onrender.com/"})
+@CrossOrigin(origins = {"http://localhost:5173","https://uiiss.onrender.com"})
 @RequiredArgsConstructor
 public class TurnController {
 

@@ -22,7 +22,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Controller
-@CrossOrigin(origins = {"http://localhost:5173","https://uiiss.onrender.com/"})
+@CrossOrigin(origins = {"http://localhost:5173","https://uiiss.onrender.com"})
 @RequestMapping("/api/messages")
 @RequiredArgsConstructor
 @Slf4j

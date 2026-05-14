@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:5173","https://uiiss.onrender.com/"})
+@CrossOrigin(origins = {"http://localhost:5173","https://uiiss.onrender.com"})
 @RequestMapping("/api/conversations")
 @RequiredArgsConstructor
 @Slf4j
