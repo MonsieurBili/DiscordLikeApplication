@@ -1755,3 +1755,187 @@ java.lang.IllegalArgumentException: User must not be null
 12:00:45.135 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 12:00:45.150 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 12:00:45.152 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:06:27.484 [main] INFO  o.e.issproject.IssProjectApplication - Starting IssProjectApplication using Java 21.0.9 with PID 29052 (D:\Faculta\MPP\ISS-Project\build\classes\java\main started by Raul in D:\Faculta\MPP\ISS-Project)
+12:06:27.484 [main] INFO  o.e.issproject.IssProjectApplication - No active profile set, falling back to 1 default profile: "default"
+12:06:27.944 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:06:27.983 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
+12:06:28.295 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+12:06:28.303 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+12:06:28.304 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:06:28.304 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+12:06:28.342 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 825 ms
+12:06:28.424 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+12:06:28.464 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+12:06:28.774 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12:06:28.796 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:06:28.899 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24258b54
+12:06:28.900 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:06:28.948 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/discord_clone]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.0
+	Default catalog/schema: discord_clone/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:06:29.772 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:06:29.863 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:06:29.950 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+12:06:31.136 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+12:06:31.136 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12:06:31.316 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:06:31.925 [main] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+12:06:31.925 [main] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5ed0d352]]
+12:06:31.925 [main] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+12:06:31.925 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+12:06:31.939 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+12:06:31.955 [main] INFO  o.e.issproject.IssProjectApplication - Started IssProjectApplication in 4.805 seconds (process running for 5.227)
+12:06:34.326 [http-nio-8081-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:06:34.326 [http-nio-8081-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:06:34.326 [http-nio-8081-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+12:06:34.472 [http-nio-8081-exec-3] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+12:06:34.472 [http-nio-8081-exec-1] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+12:06:34.888 [http-nio-8081-exec-1] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'cata' s-a conectat cu succes la WebSocket!
+12:06:34.888 [http-nio-8081-exec-3] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'billy' s-a conectat cu succes la WebSocket!
+12:06:34.888 [clientOutboundChannel-1] INFO  o.e.i.w.WebSocketEventListener - Userul billy a intrat ONLINE
+12:06:34.888 [clientOutboundChannel-2] INFO  o.e.i.w.WebSocketEventListener - Userul cata a intrat ONLINE
+12:06:34.905 [clientOutboundChannel-2] INFO  o.e.issproject.service.UserService - User cata found successfully
+12:06:34.909 [clientOutboundChannel-1] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:06:34.914 [clientOutboundChannel-2] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@428802d4
+12:06:34.914 [clientOutboundChannel-1] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@5a612b8
+12:06:34.983 [clientOutboundChannel-1] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@5a612b8
+12:06:34.983 [clientOutboundChannel-2] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@428802d4
+12:07:31.926 [MessageBroker-6] INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 2 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(2)-CONNECTED(2)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 18, active threads = 0, queued tasks = 0, completed tasks = 18], outboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], sockJsScheduler[pool size = 20, active threads = 1, queued tasks = 3, completed tasks = 16]
+12:08:09.009 [http-nio-8081-exec-4] WARN  o.e.i.service.UserDetailsOwn - User not found: Billy
+12:08:09.009 [http-nio-8081-exec-4] WARN  o.e.i.service.UserDetailsOwn - User not found: Billy
+12:11:13.243 [http-nio-8081-exec-5] INFO  o.e.i.w.WebSocketEventListener - Userul billy a ieșit OFFLINE
+12:11:13.243 [http-nio-8081-exec-5] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:11:13.243 [http-nio-8081-exec-5] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@61a7449d
+12:11:13.486 [http-nio-8081-exec-8] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+12:11:13.486 [http-nio-8081-exec-8] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'billy' s-a conectat cu succes la WebSocket!
+12:11:13.493 [clientOutboundChannel-4] INFO  o.e.i.w.WebSocketEventListener - Userul billy a intrat ONLINE
+12:11:13.493 [clientOutboundChannel-4] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:11:13.493 [clientOutboundChannel-4] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@350d5d28
+12:11:13.507 [clientOutboundChannel-4] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@350d5d28
+12:11:13.764 [http-nio-8081-exec-3] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+12:11:13.771 [http-nio-8081-exec-3] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'billy' s-a conectat cu succes la WebSocket!
+12:11:13.771 [clientOutboundChannel-5] INFO  o.e.i.w.WebSocketEventListener - Userul billy a intrat ONLINE
+12:11:13.775 [clientOutboundChannel-5] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:11:13.777 [clientOutboundChannel-5] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@75a91614
+12:11:13.793 [clientOutboundChannel-5] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@75a91614
+12:11:15.347 [http-nio-8081-exec-5] INFO  o.e.i.w.WebSocketEventListener - Userul billy a ieșit OFFLINE
+12:11:15.347 [http-nio-8081-exec-5] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:11:15.347 [http-nio-8081-exec-5] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@1a47631e
+12:11:15.371 [http-nio-8081-exec-6] INFO  o.e.i.w.WebSocketEventListener - Userul billy a ieșit OFFLINE
+12:11:15.373 [http-nio-8081-exec-6] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:11:15.374 [http-nio-8081-exec-6] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@7403067f
+12:16:06.415 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12:16:06.427 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+12:16:06.427 [SpringApplicationShutdownHook] INFO  o.e.i.w.WebSocketEventListener - Userul cata a ieșit OFFLINE
+12:16:06.427 [SpringApplicationShutdownHook] INFO  o.e.issproject.service.UserService - User cata found successfully
+12:16:06.427 [SpringApplicationShutdownHook] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@5bc9b9f3
+12:16:06.427 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+12:16:06.427 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5ed0d352]]
+12:16:06.427 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+12:16:06.443 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:16:06.443 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:16:06.443 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:17:40.863 [main] INFO  o.e.issproject.IssProjectApplication - Starting IssProjectApplication using Java 21.0.9 with PID 27220 (D:\Faculta\MPP\ISS-Project\build\classes\java\main started by Raul in D:\Faculta\MPP\ISS-Project)
+12:17:40.863 [main] INFO  o.e.issproject.IssProjectApplication - No active profile set, falling back to 1 default profile: "default"
+12:17:41.349 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:17:41.391 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+12:17:41.732 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+12:17:41.738 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+12:17:41.738 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:17:41.738 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+12:17:41.780 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 884 ms
+12:17:41.869 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+12:17:41.909 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+12:17:42.233 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12:17:42.265 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:17:42.369 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24258b54
+12:17:42.369 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:17:42.405 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/discord_clone]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.0
+	Default catalog/schema: discord_clone/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:17:43.209 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:17:43.288 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:17:43.329 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+12:17:44.510 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+12:17:44.511 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12:17:44.726 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:17:45.589 [main] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+12:17:45.589 [main] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@66dd3ed1]]
+12:17:45.589 [main] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+12:17:45.589 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+12:17:45.620 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+12:17:45.626 [main] INFO  o.e.issproject.IssProjectApplication - Started IssProjectApplication in 5.118 seconds (process running for 5.55)
+12:17:48.373 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:17:48.373 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:17:48.378 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+12:17:48.571 [http-nio-8081-exec-3] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+12:17:48.873 [http-nio-8081-exec-3] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'cata' s-a conectat cu succes la WebSocket!
+12:17:48.881 [clientOutboundChannel-1] INFO  o.e.i.w.WebSocketEventListener - Userul cata a intrat ONLINE
+12:17:48.885 [clientOutboundChannel-1] INFO  o.e.issproject.service.UserService - User cata found successfully
+12:17:48.886 [clientOutboundChannel-1] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@30b7a756
+12:17:48.959 [clientOutboundChannel-1] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@30b7a756
+12:17:51.036 [http-nio-8081-exec-10] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+12:17:51.041 [http-nio-8081-exec-10] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'billy' s-a conectat cu succes la WebSocket!
+12:17:51.042 [clientOutboundChannel-2] INFO  o.e.i.w.WebSocketEventListener - Userul billy a intrat ONLINE
+12:17:51.042 [clientOutboundChannel-2] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:17:51.042 [clientOutboundChannel-2] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@aea2f3a
+12:17:51.056 [http-nio-8081-exec-2] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+12:17:51.059 [clientOutboundChannel-2] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@aea2f3a
+12:17:51.129 [http-nio-8081-exec-8] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+12:17:55.625 [http-nio-8081-exec-3] INFO  o.e.issproject.service.UserService - Login method called for username=billy
+12:17:55.727 [http-nio-8081-exec-3] INFO  o.e.issproject.service.UserService - Authentication successful for username=billy
+12:17:55.770 [http-nio-8081-exec-3] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:17:55.771 [http-nio-8081-exec-3] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+12:17:55.771 [http-nio-8081-exec-3] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@6fa374b
+12:17:55.771 [http-nio-8081-exec-3] INFO  o.e.i.controller.UserController - User billy set to ONLINE on login
+12:17:56.799 [http-nio-8081-exec-5] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+12:17:56.807 [http-nio-8081-exec-6] INFO  o.e.i.service.ProfileService - Profile found for User: billy
+12:17:57.777 [http-nio-8081-exec-2] INFO  o.e.i.w.WebSocketSecurityConfig - Interceptez cererea de conectare WebSocket...
+12:17:57.777 [http-nio-8081-exec-10] INFO  o.e.i.c.ConversationController - Fetching conversations for user: billy
+12:17:57.784 [http-nio-8081-exec-2] INFO  o.e.i.w.WebSocketSecurityConfig - User-ul 'billy' s-a conectat cu succes la WebSocket!
+12:17:57.784 [clientOutboundChannel-3] INFO  o.e.i.w.WebSocketEventListener - Userul billy a intrat ONLINE
+12:17:57.791 [clientOutboundChannel-3] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:17:57.791 [clientOutboundChannel-3] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@1ae4294e
+12:17:57.804 [clientOutboundChannel-3] INFO  o.e.i.w.WebSocketEventListener - org.example.issproject.domain.Profile@1ae4294e
+12:17:57.826 [http-nio-8081-exec-1] INFO  o.e.i.c.ConversationController - Fetching conversations for user: billy
+12:17:58.423 [http-nio-8081-exec-5] INFO  o.e.i.c.ConversationController - User billy loading messages for conversation f9bd6f20-da12-41a7-8831-8316b7ae24aa
+12:17:59.558 [clientInboundChannel-22] INFO  o.e.issproject.service.UserService - User cata found successfully
+12:17:59.559 [clientInboundChannel-22] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:17:59.610 [clientInboundChannel-22] INFO  o.e.i.controller.MessageController - Message delivered to receiver: cata
+12:17:59.610 [clientInboundChannel-22] INFO  o.e.i.controller.MessageController - Echo delivered to sender: billy
+12:18:45.590 [MessageBroker-3] INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 3 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(3)-CONNECTED(3)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 24, active threads = 0, queued tasks = 0, completed tasks = 24], outboundChannel[pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 5], sockJsScheduler[pool size = 20, active threads = 1, queued tasks = 4, completed tasks = 16]
+12:20:25.653 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12:20:25.663 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+12:20:25.663 [SpringApplicationShutdownHook] INFO  o.e.i.w.WebSocketEventListener - Userul cata a ieșit OFFLINE
+12:20:25.663 [SpringApplicationShutdownHook] INFO  o.e.issproject.service.UserService - User cata found successfully
+12:20:25.673 [SpringApplicationShutdownHook] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@10bdc12a
+12:20:25.682 [SpringApplicationShutdownHook] INFO  o.e.i.w.WebSocketEventListener - Userul billy a ieșit OFFLINE
+12:20:25.685 [SpringApplicationShutdownHook] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:20:25.685 [SpringApplicationShutdownHook] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@22a06d4c
+12:20:25.685 [SpringApplicationShutdownHook] INFO  o.e.i.w.WebSocketEventListener - Userul billy a ieșit OFFLINE
+12:20:25.685 [SpringApplicationShutdownHook] INFO  o.e.issproject.service.UserService - User billy found successfully
+12:20:25.685 [SpringApplicationShutdownHook] INFO  o.e.i.service.ProfileService - Saving profile org.example.issproject.domain.Profile@75c5b44b
+12:20:25.696 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+12:20:25.696 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@66dd3ed1]]
+12:20:25.696 [SpringApplicationShutdownHook] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+12:20:25.696 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:20:25.696 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:20:25.706 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
