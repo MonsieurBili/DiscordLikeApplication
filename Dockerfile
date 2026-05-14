@@ -1,8 +1,7 @@
-FROM gradle:8.7-jdk21 AS build
+FROM eclipse-temurin:21-jdk AS build
 WORKDIR /app
-COPY build.gradle settings.gradle ./
-COPY src ./src
-RUN gradle build -x test
+COPY . .
+RUN chmod +x gradlew && ./gradlew build -x test
 
 FROM eclipse-temurin:21-jre
 WORKDIR /app
